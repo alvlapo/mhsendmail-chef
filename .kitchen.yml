@@ -23,8 +23,7 @@ suites:
       inspec_tests:
         - test/integration/default
     attributes:
-
-suites:
+      
   - name: source
     run_list:
       - recipe[mhsendmail::default]

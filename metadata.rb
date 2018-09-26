@@ -4,7 +4,7 @@ maintainer_email 'alvlapo@gmail.com'
 license 'All Rights Reserved'
 description 'Installs/Configures mhsendmail for MailHog'
 long_description 'Installs/Configures mhsendmail for MailHog'
-version '0.1.0'
+version '0.2.0'
 chef_version '>= 12.14' if respond_to?(:chef_version)
 
 depends 'golang'
