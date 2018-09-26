@@ -16,10 +16,21 @@ platforms:
   - name: debian-9.5
 
 suites:
-  - name: default
+  - name: binary
     run_list:
       - recipe[mhsendmail::default]
     verifier:
       inspec_tests:
         - test/integration/default
     attributes:
+
+suites:
+  - name: source
+    run_list:
+      - recipe[mhsendmail::default]
+    verifier:
+      inspec_tests:
+        - test/integration/default
+    attributes:
+      mhsendmail:
+        install_method: 'source'
